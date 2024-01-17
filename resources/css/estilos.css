@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.esquema {
+    padding: 20px;    
+    display: flex;
+    justify-content: center;        
+}
+
+/* Lineas */
+.conectores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+.conectores .conector {
+    display: flex;
+    align-items: center;
+}
+.conectores .conector .conector_doble {
+    width: 100px;
+    height: 70px;        
+    padding: 10px;
+    border-top: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);    
+}
+
+.conectores .conector .conector_simple {
+    width: 10px;    
+    padding: 0 15px 0 0;
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+
+.conectores .conector .conector_doble_semifinal {
+    height: 150px;
+}
+
+.conectores .conector .conector_doble_ganador {
+    height: 300px;
+}
+
+.equipo {
+    color: rgb(196, 213, 248);
+}
+
+.goles {
+    color: rgb(224, 226, 255);
+}
+
+/* Octavos de finl */
+
+.partido {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;    
+    padding: 10px 0 10px 10px;   
+}
+
+.partido .jugador {
+    width: 150px;
+    background-color: rgb(8, 144, 242);
+}
+
+.partido .jornada{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.partido .jornada .jugador {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+
+/* Cuartos de final */
+.jornada_contenedor  {
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.jornada_contenedor .jornada .jugador {
+
+    width: 150px;
+    padding: 15px;
+    background-color: rgb(8, 144, 242);
+
+}
+
+/* Ganador */
+.esquema .ganador_esquema {    
+    display: flex;
+    flex-direction: row;
+    align-items: center;          
+}
+.esquema .ganador {    
+    height: auto;
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+        
+}
+
+.esquema .conectores_ganador {
+
+    display: flex;
+    align-items: center;    
+}
+
+.esquema .ganador .jugador {
+    width: 150px;
+    padding: 15px;               
+    background-color: rgb(8, 144, 242);
+}
